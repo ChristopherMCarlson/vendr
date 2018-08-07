@@ -13,16 +13,16 @@
   <main>
     <div class="food">
       <div class="food-item">
-        <img src="https://www.fritolay.com/images/default-source/blue-bag-image/fritos-original.png?sfvrsn=b704563a_2" alt="">
-        <h3>PRICE PLACEHOLDER</h3>
+        <img src="https://www.fritolay.com/images/default-source/blue-bag-image/fritos-original.png?sfvrsn=b704563a_2" alt="" onclick='app.controllers.vendController.vendItem("a1")'>
+        <h3>$1.25</h3>
       </div>
       <div class="food-item">
-        <img src="https://pbs.twimg.com/profile_images/824647153721106432/gwLIQxqy_400x400.jpg" alt="">
-        <h3>PRICE PLACEHOLDER</h3>
+        <img src="https://pbs.twimg.com/profile_images/824647153721106432/gwLIQxqy_400x400.jpg" alt="" onclick='app.controllers.vendController.vendItem("a2")'>
+        <h3>$2.00</h3>
       </div>
       <div class="food-item">
-        <img src="http://www.mountaindew.com/assets/content/38195/20881/21892-grew-dew-product.png" alt="">
-        <h3>PRICE PLACEHOLDER</h3>
+        <img src="http://www.mountaindew.com/assets/content/38195/20881/21892-grew-dew-product.png" alt="" onclick='app.controllers.vendController.vendItem("a3")'>
+        <h3>$0.75</h3>
       </div>
     </div>
     <div class="money">
@@ -34,6 +34,9 @@
       <p>Change: $
         <span id="total">0.00</span>
       </p>
+    </div>
+    <div id="vended-item">
+
     </div>
   </main>
 

@@ -6,17 +6,6 @@ import VendingMachine from '../../models/VendingMachine.js'
 const vendingMachine = new VendingMachine()
 
 
-let total = 0
-
-
-//dictionary
-const currency = {
-  quarter: .25,
-  dime: .1,
-  nickel: .05
-}
-
-
 //public to controller
 class VendService {
   constructor() {
@@ -25,13 +14,20 @@ class VendService {
 
   addMoney(type) {
     console.log('service: ', type)
-    //confirm currency is acceptable
-    if (currency[type]) {
-      //add to total
-      total += currency[type]
-      total = parseFloat(total.toFixed(2))
-    }
+
+    let total = vendingMachine.addMoney(type)
     return total
+  }
+
+  vend(item) {
+    console.log('service: ', item);
+    let vendItem = vendingMachine.vend(item)
+    return vendItem
+  }
+
+  getRemainder() {
+    let remainder = vendingMachine.getRemainder();
+    return remainder;
   }
 }
 

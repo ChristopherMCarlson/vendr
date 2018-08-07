@@ -1,11 +1,14 @@
 import VendController from './app/components/vend/VendController.js'
 
+import VendingMachine from './app/models/VendingMachine.js'
+
 
 
 class App {
   constructor() {
     this.controllers = {
-      vendController: new VendController()
+      vendController: new VendController(),
+      vendingMachine: new VendingMachine()
     }
   }
 }
