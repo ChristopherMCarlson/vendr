@@ -1,4 +1,10 @@
+import VendingMachine from '../../models/VendingMachine.js'
+
 //PRIVATE PARTS
+
+
+const vendingMachine = new VendingMachine()
+
 
 let total = 0
 
